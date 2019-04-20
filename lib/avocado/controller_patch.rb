@@ -8,7 +8,7 @@ module Avocado
     end
 
     def self.apply
-      ActionController::Base.send :include, Avocado::ControllerPatch
+      ActionController::API.send :include, Avocado::ControllerPatch
     end
 
     def _avocado_store_request
